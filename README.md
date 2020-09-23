@@ -1,18 +1,18 @@
 # C-multiclient-online-lottery-game
 A simple multi-client shell application written in C which simulate the Lottery game
 
-#DISCLAIMER
+<b>DISCLAIMER</b> <br>
 This application has been developed on Debian GNU/Linux 8.0, so that it won't run on Windows OS.
 
-#INSTRUCTIONS FOR OFFLINE TEST (LOCALHOST)
+<b>INSTRUCTIONS FOR OFFLINE TEST (LOCALHOST)</b> <br>
 1. Download the .zip file and extract it wherever you want (i.e. /home/Desktop)
 2. Open 2 terminal and type cd Desktop/progetto
 3. Now you have to compile both files "lotto_server.c" and "lotto_client.c", to do so type in the command "make" in terminal 
 (If command "make" doesnt work for you, compile each files manually as follows:
-  >> gcc -c lotto_server.c -o lotto_server.o
-  >> gcc- lotto_server.o -o lotto_server
-  >> gcc -c lotto_client.c -o lotto_client.o
-  >> gcc- lotto_client.o -o lotto_client
+  >> gcc -c lotto_server.c -o lotto_server.o <br>
+  >> gcc- lotto_server.o -o lotto_server <br>
+  >> gcc -c lotto_client.c -o lotto_client.o <br>
+  >> gcc- lotto_client.o -o lotto_client <br>
 )
 4. Now run the server in first terminal typing "./lotto_server <port>"
   >> ./lotto_server 4444 Y (Y=minutes between lottery extraction)
@@ -20,7 +20,7 @@ This application has been developed on Debian GNU/Linux 8.0, so that it won't ru
   >> ./lotto_client 127.0.0.1 4444
 6. Now you can start playing simply by following the list of available commands below.
   
-#INSTRUCTION FOR ONLINE TEST
+<b>INSTRUCTION FOR ONLINE TEST</b> <br>
 0. Firstly, you have to access your router administration panel by typing 192.168.1.1 into the URL search bar on your web browser.
 1. Now you have to find the LOCAL Ip Address of the host you want to run the server onto. (i.e. 192.168.x.x or similar)
 2. Now look for "Port Forwarding" or similar panel, and choose open a port X (i.e. 4444) for the host which has the Local Ip from the step 1.
@@ -28,11 +28,11 @@ This application has been developed on Debian GNU/Linux 8.0, so that it won't ru
 4. You can now download the .zip file on 2 different host (the one which have the X port opened will run the server obviously)
 5. Compile as in step 3 from previous instruction list
 6. Run the server on the host which has the X port opened, and the client from another linux host from the rest of the world.
-  >>./lotto_server X Y (X=forwarded port / Y=minutes between lottery extraction)
+  >>./lotto_server X Y (X=forwarded port / Y=minutes between lottery extraction) <br>
   >>./lotto_client IP_ADDR X  (IP_ADDR = the online ip from step 3)
 5. Now you can start playing simply by following the list of available commands below.
 
-#COMMAND LIST
+<b>COMMAND LIST</b> <br>
 Every command starts with "!", so "!<command>".
 Once you are connected, you can type the command "!help" for the list of the whole available ones.
 Then you can check the single command by typing "!help <command name>"
