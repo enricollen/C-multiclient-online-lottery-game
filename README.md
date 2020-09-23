@@ -8,12 +8,12 @@ This application has been developed on Debian GNU/Linux 8.0, so that it won't ru
 1. Download the .zip file and extract it wherever you want (i.e. /home/Desktop)
 2. Open 2 terminal and type cd Desktop/progetto
 3. Now you have to compile both files "lotto_server.c" and "lotto_client.c", to do so type in the command "make" in terminal 
-(If command "make" doesnt work for you, compile each files manually as follows:
+If command "make" doesnt work for you, compile each files manually as follows:
   >> gcc -c lotto_server.c -o lotto_server.o <br>
   >> gcc- lotto_server.o -o lotto_server <br>
   >> gcc -c lotto_client.c -o lotto_client.o <br>
   >> gcc- lotto_client.o -o lotto_client <br>
-)
+
 4. Now run the server in first terminal typing "./lotto_server <port>"
   >> ./lotto_server 4444 Y (Y=minutes between lottery extraction)
 5. Run client in second terminal typing "./lotto_client <ip addr> <port>"
@@ -48,3 +48,12 @@ All the captions are in italian btw, so here's a quick translation for you:
 7. !vedi_estrazione X => it shows the last X extractions calculated by the system, so that you can check the winning numbers on every city.
 8. !vedi_estrazione X Y => it shows the last X extractions for the Y city, so that you can check the winning numbers on Y.
 9. !esci => stands for quit, requires to be logged in
+
+<b>SCREENSHOOTS</b> <br>
+<a href="https://ibb.co/z4gdzh3"><img src="https://i.ibb.co/nLypFsX/1.png" alt="1" border="0"></a>
+<a href="https://ibb.co/S74j15w"><img src="https://i.ibb.co/tPTGNQp/2.png" alt="2" border="0"></a>
+<a href="https://ibb.co/yY7zjDy"><img src="https://i.ibb.co/JygYJN7/3.png" alt="3" border="0"></a>
+<a href="https://ibb.co/0XZYb2s"><img src="https://i.ibb.co/N3pWBCT/4.png" alt="4" border="0"></a>
+<a href="https://ibb.co/mzJbgk3"><img src="https://i.ibb.co/kcK5vjt/5.png" alt="5" border="0"></a>
+<a href="https://ibb.co/PzGHYb2"><img src="https://i.ibb.co/93H5vfx/6.png" alt="6" border="0"></a>
+<a href="https://ibb.co/3FkhsY7"><img src="https://i.ibb.co/FYn7WqK/7.png" alt="7" border="0"></a>
